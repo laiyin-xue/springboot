@@ -5,7 +5,6 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.apache.commons.lang3.StringUtils;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.*;
 import org.springframework.web.bind.annotation.*;
 
@@ -30,10 +29,5 @@ public class HelloWorld {
                 .stream()
                 .map(value -> StringUtils.join(value, ""))
                 .collect(Collectors.joining(", "));
-    }
-
-
-    public static void main(String[] args) {
-        SpringApplication.run(HelloWorld.class, args);
     }
 }
