@@ -5,11 +5,9 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.apache.commons.lang3.StringUtils;
 
-import org.springframework.boot.autoconfigure.*;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@EnableAutoConfiguration
 public class HelloWorld {
 
     @RequestMapping("/helloWorld")
